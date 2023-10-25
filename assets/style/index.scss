@@ -1,0 +1,61 @@
+.modal_box{
+    padding: 20px;
+    background-color: #F6DFEB;
+    width: 300px;
+    height: 100px;
+    border-radius: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: all .2s ease;
+    z-index: 2;
+    font-size: 2rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    
+    &.active{
+        transform: translate(-50%,-50%) scale(1);
+
+    }
+
+    button{
+        // cursor:pointer;
+        border: none;
+        outline: none;
+        background-color:transparent;
+        font-size: 1.4rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: end;
+        transition: all .1s ease;
+    }
+}
+
+.custom_btn{
+    cursor: pointer;
+    padding: 10px 20px;
+    display: block;
+    background-color: #B9BBDF;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000, $alpha: 0.5);
+
+    &.active{
+        display: block;
+        opacity: 1;
+
+    }
+}
