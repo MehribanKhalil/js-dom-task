@@ -41,7 +41,6 @@
 
 .overlay {
   position: fixed;
-  opacity: 0;
   display: none;
   top: 0;
   left: 0;
@@ -51,5 +50,4 @@
 }
 .overlay.active {
   display: block;
-  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

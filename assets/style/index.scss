@@ -45,7 +45,6 @@
 
 .overlay{
     position: fixed;
-    opacity: 0;
     display: none;
     top: 0;
     left: 0;
@@ -55,7 +54,5 @@
 
     &.active{
         display: block;
-        opacity: 1;
-
     }
 }
